@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоЗапчасти | Каталог автозапчастей и автосервис</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🔧 АВТОЗАПЧАСТИ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- СЛАЙДЕР -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/slide1.jpg')">
+                <div class="slide-content">
+                    <h1>Оригинальные автозапчасти</h1>
+                    <p>Для LADA и других марок — в наличии и под заказ</p>
+                    <a href="#contact" class="btn">Заказать →</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/slide2.jpg')">
+                <div class="slide-content">
+                    <h1>Профессиональный автосервис</h1>
+                    <p>Диагностика, ремонт, обслуживание под ключ</p>
+                    <a href="#contact" class="btn">Записаться →</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/slide3.jpg')">
+                <div class="slide-content">
+                    <h1>Доставка по всей России</h1>
+                    <p>Быстрая отправка и отслеживание заказа</p>
+                    <a href="#catalog" class="btn">Перейти в каталог →</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ ЗАПЧАСТЕЙ -->
+    <section id="catalog" class="catalog">
+        <h2>Популярные запчасти</h2>
+        <div class="catalog-items">
+            <div class="item">
+                <div class="item-icon">🔧</div>
+                <h3>Масляный фильтр</h3>
+                <p>Оригинал, для LADA Vesta / Granta</p>
+                <p class="price">от 350 ₽</p>
+            </div>
+            <div class="item">
+                <div class="item-icon">🛞</div>
+                <h3>Тормозные колодки</h3>
+                <p>Передние / задние, комплект 4 шт</p>
+                <p class="price">от 1 200 ₽</p>
+            </div>
+            <div class="item">
+                <div class="item-icon">⚙️</div>
+                <h3>Ремень ГРМ</h3>
+                <p>Для двигателей 1.6, 16 клапанов</p>
+                <p class="price">от 850 ₽</p>
+            </div>
+            <div class="item">
+                <div class="item-icon">💡</div>
+                <h3>Лампы головного света</h3>
+                <p>H4, H7, комплект 2 шт</p>
+                <p class="price">от 400 ₽</p>
+            </div>
+            <div class="item">
+                <div class="item-icon">🔋</div>
+                <h3>Аккумуляторы</h3>
+                <p>60–75 Ач, все популярные бренды</p>
+                <p class="price">от 4 500 ₽</p>
+            </div>
+            <div class="item">
+                <div class="item-icon">🛢️</div>
+                <h3>Моторное масло</h3>
+                <p>5W-30, 5W-40, 4 литра</p>
+                <p class="price">от 2 200 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ АВТОСЕРВИСА -->
+    <section id="services" class="services">
+        <h2>Услуги автосервиса</h2>
+        <div class="service-cards">
+            <div class="card">
+                <div class="card-icon">🔍</div>
+                <h3>Компьютерная диагностика</h3>
+                <p>Полная проверка всех систем автомобиля</p>
+                <p class="price">от 500 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚙️</div>
+                <h3>Ремонт двигателя</h3>
+                <p>Капитальный и текущий ремонт ДВС</p>
+                <p class="price">от 5 000 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛞</div>
+                <h3>Шиномонтаж</h3>
+                <p>Балансировка, ремонт шин, хранение</p>
+                <p class="price">от 1 500 ₽</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔧</div>
+                <h3>Слесарный ремонт</h3>
+                <p>Ходовая, тормозная система, подвеска</p>
+                <p class="price">от 1 000 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ + ФОРМА ЗАЯВКИ -->
+    <section id="contact" class="contact">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                <p>📞 +7 (999) 123-45-67</p>
+                <p>✉ info@avtoparts.ru</p>
+                <p>📍 г. Москва, ул. Автозаводская, 15</p>
+                <p>⏰ Пн-Вс: 09:00 - 20:00</p>
+                <p>🚗 Работаем с LADA, KIA, Hyundai, Renault</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="Name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+                <input type="tel" id="phone" name="Phone" placeholder="Телефон">
+                <input type="text" id="car" name="Car" placeholder="Марка и модель автомобиля">
+                <textarea id="message" name="Message" placeholder="Что нужно? (запчасть / запись на ремонт)" rows="4" required></textarea>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+        <div id="form-status" class="form-status"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 АвтоЗапчасти. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
